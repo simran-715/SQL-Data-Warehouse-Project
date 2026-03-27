@@ -19,10 +19,21 @@ Usage Notes:
 ====================================================
 
 */
+--====================================================
+--                   dim_customers
+--====================================================
 
---dim_customers------------------------------------------------------------
 select distinct gender
 from gold.dim_customers;
+
+--check uniqueness of customer key in gold.dim_customers
+--Expectation: No Result
+select   
+  customer_key, 
+  Count(*) AS duplicate_count
+from gold.dim_customers
+group by customer_key
+having Count(*)>1;
 
 --products ( before buisness object)---------------------------------------
 select prd_key, Count(*)
