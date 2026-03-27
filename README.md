@@ -27,7 +27,8 @@ Handles:
       
       -Data is reloaded using TRUNCATE + INSERT
       
-🥇 ** Gold Layer (Business Layer)**
+🥇  **Gold Layer (Business Layer)**
+
 Creates business-ready views
 Implements Star Schema
 Performs:
@@ -67,9 +68,9 @@ Performs:
       
 **Fact Table:**
 
-       **fact_sales**
-      Stores transactional sales data
-      Uses lookup joins to map:
+      fact_sales
+            Stores transactional sales data
+            Uses lookup joins to map:
             -customer_key
             -product_key
                         
