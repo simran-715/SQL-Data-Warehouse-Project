@@ -14,24 +14,36 @@ No transformations applied
 🥈 **Silver Layer (Cleaned Data)**
 Applies data cleaning and transformations
 Handles:
+
       -Null values
+
       -Data standardization
+      
       -Filtering (e.g., removing historical records)
+      
       -Data is reloaded using TRUNCATE + INSERT
+      
 🥇** Gold Layer (Business Layer)**
 Creates business-ready views
 Implements Star Schema
 Performs:
+
       -Aggregation
+      
       -Data modeling
+      
       -Lookup using surrogate keys
       
 # Data Sources
 **Source: source_crm (CSV files)**
+
       cust_info → Customer data
+      
       prd_info → Product data
+      
       sales_details → Sales transactions
 **Source: source_erp (CSV files)**
+
       cust_az12 → Additional customer info
       loc_a101 → Customer location
       px_cat_g1v2 → Product category
