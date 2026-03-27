@@ -27,7 +27,7 @@ Handles:
       
       -Data is reloaded using TRUNCATE + INSERT
       
-🥇** Gold Layer (Business Layer)**
+🥇 ** Gold Layer (Business Layer)**
 Creates business-ready views
 Implements Star Schema
 Performs:
